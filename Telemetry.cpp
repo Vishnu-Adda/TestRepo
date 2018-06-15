@@ -30,7 +30,7 @@ void task1()
     registerVariable('f', &max_speed);
     while(1)
     {
-        // TODO: DO THE THING
+        driveWheels(max_speed);
     }
 }
 
@@ -39,7 +39,7 @@ void task1()
     int max_turn = 5;
     while(1)
     {
-        // TODO: DO THE THING
+        steerWheels(max_turn);
     }
 }
 
@@ -47,6 +47,9 @@ void remote_call()
 {
     if(iGetARemoteCall())
     {
-        // TODO: DO THE THING
+        if(type[0] == 'f')
+        {
+            printf("%f\n", *(static_cast<float *>(array[0]));
+        }
     }
 }
